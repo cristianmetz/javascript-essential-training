@@ -7,3 +7,31 @@
  * - Find an object that has another object inside of it to create a nested object.
  * - Test your objects in the browser console by accessing the entire object and its specific properties.
  */
+
+const Desktop = {
+  name: "CyberPower",
+  color: "Black",
+  weight: 20,
+  hardDrives: {
+    main: "SSD 128GB",
+    alt: "HDD 1T",
+  },
+};
+
+console.log(Desktop.hardDrives["main"]);
+
+const Kitchen = {
+  size: "300sqf",
+  color: "grey",
+  cabinets: 12,
+  drawers: {
+    knifes: 10,
+    forks: 10,
+    plates: 20,
+  },
+  dishWasher: {
+    cups: 6,
+    fryingPan: 2,
+  },
+};
+console.log(Kitchen.drawers["plates"]);
