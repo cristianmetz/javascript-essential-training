@@ -23,4 +23,12 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+  pocketsOpen: false,
+  zipPocket: function (pocketStatus) {
+    this.pocketsOpen = pocketStatus;
+  },
 };
+
+console.log(backpack.pocketsOpened);
+console.log("The backpack object:", backpack);
+console.log("The pocketsOpen", backpack.pocketStatus);
