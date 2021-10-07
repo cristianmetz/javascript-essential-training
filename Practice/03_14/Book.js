@@ -16,7 +16,7 @@ class Book {
       front: frontCondition,
       back: backCondition,
     };
-    this.insUse = inUse;
+    this.inUse = inUse;
   }
 
   toggleConditon(bookStatus) {
