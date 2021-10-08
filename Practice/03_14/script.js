@@ -31,7 +31,7 @@ console.log(
   fictionBook.condition.front
 );
 
-const narutoBook = new Book (
+const narutoBook = new Book(
   "Ninja Naruto",
   "Masashi Kishimoto",
   243,
@@ -43,7 +43,7 @@ const narutoBook = new Book (
 
 console.log("The Ninja Naruto book:", narutoBook);
 
-const billBurr = new Book (
+const billBurr = new Book(
   "Bill Burr Biography",
   "Bill Burr",
   1,
@@ -55,7 +55,7 @@ const billBurr = new Book (
 
 console.log("The Bill Burr Autobiography:", billBurr);
 
-billBurr.toggleConditon(true)
+billBurr.toggleConditon(true);
 
 const onePiece = new Book(
   "One Peace",
@@ -78,3 +78,4 @@ const itWorld = new Book(
   "Used",
   false
 );
+console.log("This is the object IT World:", itWorld);
