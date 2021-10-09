@@ -17,6 +17,9 @@
  * to find one of its children
  */
 
+//Selects first child
+document.querySelector("main li:first-child");
+
 //Makes the 5th button background red
 document.querySelectorAll("button");
 var x = document.querySelectorAll("button");
