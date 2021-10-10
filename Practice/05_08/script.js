@@ -17,3 +17,31 @@
  * 7. Query the style property of an element in the console to get a list of all the
  *    style properties available
  */
+
+//Task 1
+document.querySelector("main h1").classList.add("new-class");
+document.querySelector("main h1").classList.add("new-class02");
+
+//Task 2
+document.querySelector("main h1").classList.remove("new-class02");
+
+//Task 3
+document
+  .querySelector("article#pack02.backpack img")
+  .setAttribute("alt", "image of a frog");
+
+//Task 4
+document.querySelector("article#pack02.backpack img").getAttribute("alt");
+document.querySelector("article#pack02.backpack img").getAttribute("src");
+
+//Task 5
+document.querySelector(
+  "article#pack01.backpack li:first-child"
+).style.backgroundColor = "Blue";
+
+//Task 6
+document.querySelector("article#pack01.backpack h1").style.color =
+  "rebeccapurple";
+
+//Task 7
+document.querySelector("article#pack01.backpack h1").style;
