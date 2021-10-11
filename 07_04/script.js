@@ -24,7 +24,4 @@ console.log(found);
 //Task 6
 let remove = "phone"
 workDesk.splice(workDesk.indexOf(remove), 1)
-console.log(`Array with "${remove}" removed:`, workDesk)
-
-
-
+console.log(`Array with "${remove}" removed:`, workDesk);
