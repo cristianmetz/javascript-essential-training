@@ -19,7 +19,6 @@ const everydayPack = new Backpack(
 );
 
 const content = `
-  <article class="backpack" id="everyday">
     <figure class="backpack__image">
       <img src=${everydayPack.image} alt="" />
     </figure>
@@ -45,9 +44,16 @@ const content = `
         everydayPack.lidOpen
       }</span></li>
     </ul>
-  </article>
 `;
 
 const main = document.querySelector(".maincontent");
-
-main.innerHTML = content;
+//assigns the main veriable the query selector of .maincontent
+const newArticle = document.createElement("article");
+//creates a new article on the DOM but it is not placed anywhere untill it is used
+newArticle.classList.add("backpack");
+//adds a class to the article element
+newArticle.setAttribute("id", "everday");
+//adds an id attribute with the value everyday
+newArticle.innerHTML = content;
+//places the template literal content inside the article element
+main.append(newArticle);
