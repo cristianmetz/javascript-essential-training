@@ -57,3 +57,15 @@ const content = `
       }</span></li>
     </ul>  
 `;
+
+const newArticle = (frogpack) => {
+  let newArticle = document.createElement("article");
+  newArticle.innerHTML = content;
+  return newArticle;
+}
+
+const addFigure = (functionTwo) => {
+let newFigure = document.createElement("figure");
+let newImg = document.createElement("img");
+newImg.setAttribute("src", frogpack.img)
+}
