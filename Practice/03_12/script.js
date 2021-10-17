@@ -42,3 +42,22 @@ console.log("The Every Home Kitchen object:", everyHomeKitchen);
 everyHomeKitchen.togglelid(true);
 
 console.log("The Every Home Kitchen lid status is:", everyHomeKitchen.lidOpen);
+
+import Bedroom from "./Bedroom.js";
+
+const everyhomeBedroom = new Bedroom(
+  "Restoration Room",
+  700,
+  "red",
+  10,
+  20,
+  18,
+  10,
+  2,
+  false
+);
+
+everyhomeBedroom.toggleMadeBed(true);
+console.log("This is the every home bedroom object:", everyhomeBedroom);
+everyhomeBedroom.bedItems(5, 1);
+console.log("This is the new pillow and mattress count:", everyhomeBedroom.bed);
