@@ -35,3 +35,28 @@ const Kitchen = {
   },
 };
 console.log(Kitchen.drawers["plates"]);
+
+/**
+ * SECOND ROUND
+ * Practice: Building objects
+ *
+ * - Create JavaScript objects based on objects in your current environment.
+ * - Give each object an identifiable name.
+ * - Create properties to describe the objects and set their values.
+ * - Find an object that has another object inside of it to create a nested object.
+ * - Test your objects in the browser console by accessing the entire object and its specific properties.
+ */
+
+const bedroom = {
+  name: "Restoration room",
+  size: 400,
+  color: "grey",
+  window: 1,
+  pictures: 6,
+  bed: {
+    pillows: 2,
+    mattresses: 2,
+  },
+};
+console.log("This is the bedroom object: ", bedroom);
+console.log("The number of pillows is: ", bedroom.bed.pillows);

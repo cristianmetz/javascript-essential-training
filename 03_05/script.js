@@ -20,3 +20,5 @@ const backpack = {
     this.strapLength.right = lengthRight;
   },
 };
+
+console.log("This is the everyday backpack:", backpack);

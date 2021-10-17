@@ -22,3 +22,9 @@ const backpack = {
 };
 
 console.log("The backpack object:", backpack);
+console.log("The pocketsNum value", backpack.pocketNum);
+console.log("Strap lenghtLeft: ", backpack.strapLength.left);
+
+var query = "pocketNum";
+
+console.log("The pocketsNum value", backpack[query]);
