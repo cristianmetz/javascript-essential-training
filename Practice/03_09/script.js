@@ -83,3 +83,34 @@ const bedroom = {
   },
 };
 console.log("This is the bedroom object: ", bedroom);
+
+/**
+ * THIRD ROUND
+ * Practice: Making methods
+ *
+ * - Create a method for each object property.
+ * - The method receives a value to match the property to be changed.
+ * - Create a simple function to replace the current property value with the received value.
+ * - Test the method by sending new values and checking the properties in the console.
+ */
+
+ const toolKit = {
+  name: "Computer Tool Kit",
+  color: "black",
+  weight: 2,
+  tools: {
+      phillipsScrewdriver: 5,
+      flatheadScrewdriver: 5,
+      headAttchments: 5
+
+  },
+  zipped: false,
+  toggleZipper(zipperStatus) {
+    this.zipped = zipperStatus;
+  }
+}
+
+console.log("This is the toolkit object:", toolKit);
+console.log("This is the status of the zipped property:", toolKit.zipped);
+toolKit.toggleZipper(true);
+console.log("This is the zipper's new status:", toolKit.zipped);

@@ -61,3 +61,29 @@ everyhomeBedroom.toggleMadeBed(true);
 console.log("This is the every home bedroom object:", everyhomeBedroom);
 everyhomeBedroom.bedItems(5, 1);
 console.log("This is the new pillow and mattress count:", everyhomeBedroom.bed);
+
+/**
+ * Practice: Making classes and objects
+ *
+ * - Find a type of object you have more than one of in your house (eg. clothing, writing tools, etc).
+ * - Create a class describing this object type - its properties and methods.
+ * - Create several objects using the class.
+ * - Test the objecs by calling their properties and using their methods in the console.
+ */
+
+
+import Toolkit from "./Toolkit";
+
+const techToolkit = new Toolkit (
+  "Computer Tool Kit",
+  "black",
+  2,
+  5,
+  5,
+  5,
+  false
+);
+console.log("This is the toolkit object:", techToolkit);
+console.log("This is the status of the zipped property:", techToolkit.zipped);
+techToolkit.toggleZipper(true);
+console.log("This is the zipper's new status:", techToolkit.zipped);
