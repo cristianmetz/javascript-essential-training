@@ -72,7 +72,7 @@ console.log("This is the new pillow and mattress count:", everyhomeBedroom.bed);
  */
 
 
-import Toolkit from "./Toolkit";
+import Toolkit from "./Toolkit.js";
 
 const techToolkit = new Toolkit (
   "Computer Tool Kit",
