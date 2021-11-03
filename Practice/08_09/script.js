@@ -22,6 +22,8 @@ const frogpack = {
     left: 10,
     right: 10,
   },
+  description:
+    "A green kids backpack designed to make the lid look like the face of a frog sticking out its tongue.",
   lidOpen: false,
   image: "../../assets/images/frog.svg",
   toggleLid: function (lidStatus) {
@@ -58,14 +60,36 @@ const content = `
     </ul>  
 `;
 
-const newArticle = (frogpack) => {
-  let newArticle = document.createElement("article");
-  newArticle.innerHTML = content;
-  return newArticle;
-}
+/**
+ * addFigure function
+ * - Receives dataObj
+ * - Creates <figure> <img> <figcaption>
+ * - Returns <figure>
+ */
 
-const addFigure = (functionTwo) => {
-let newFigure = document.createElement("figure");
-let newImg = document.createElement("img");
-newImg.setAttribute("src", frogpack.img)
-}
+/**
+ * createArticle function
+ * - Receives backpack object
+ * - Creates <article>
+ * - Calls addFigure()
+ * - Returns <article>
+ */
+
+const figureFunction = (object) => {
+  let figureEle = document.createElement("figure");
+  let imageEle = document.createElement("img");
+  imageEle.setAttribute("src", object.image);
+  imageEle.setAttribute("alt", "");
+  let figCap = document.createElement("figcaption");
+  figCap.innerText = object.description;
+  figureEle.append(imageEle, figCap);
+  return figureEle;
+};
+
+const articleFunction = (frogpack) => {
+  let articleElement = document.createElement("article");
+  articleElement.innerHTML = content;
+  document.body.prepend(figureFunction(frogpack));
+  return articleElement;
+};
+document.querySelector("main").append(articleFunction(frogpack));
