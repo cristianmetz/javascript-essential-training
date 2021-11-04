@@ -93,3 +93,36 @@ const articleFunction = (frogpack) => {
   return articleElement;
 };
 document.querySelector("main").append(articleFunction(frogpack));
+/**
+ * addFigure function
+ * - Receives dataObj
+ * - Creates <figure> <img> <figcaption>
+ * - Returns <figure>
+ */
+
+/**
+ * createArticle function
+ * - Receives backpack object
+ * - Creates <article>
+ * - Calls addFigure()
+ * - Returns <article>
+ */
+
+const addFigure = (dataObj) => {
+  let newFig = document.createElement("figure");
+  let newimg = document.createElement("img");
+  newimg.setAttribute("src", dataObj.image);
+  newimg.setAttribute("alt", "")
+  let newFigCap = document.createElement("figcaption")
+  newFigCap.innerText = dataObj.description;
+  newFig.append(newimg, newFigCap);
+  return newFig;
+}
+
+const createArticle = (frogpack) => {
+  let newArticle = document.createElement("article");
+  newArticle.innerHTML = content
+  newArticle.prepend(addFigure(frogpack));
+  return newArticle;  
+}
+document.body.querySelector("main").append(createArticle(frogpack))
