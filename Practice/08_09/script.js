@@ -141,3 +141,23 @@ document.body.querySelector("main").append(createArticle(frogpack));
  * - Calls addFigure()
  * - Returns <article>
  */
+
+const funcOne = function (object) {
+  let funcOneArticle = document.createElement("article");
+  funcOneArticle.innerHTML = content;
+  funcOneArticle.prepend(funcTwo(object));
+  return funcOneArticle;
+};
+
+const funcTwo = function (test) {
+  let funcTwoFigure = document.createElement("figure");
+  let functTwoImg = document.createElement("img");
+  functTwoImg.setAttribute("src", test.image);
+  functTwoImg.setAttribute("alt", "");
+  let funcTwoFigcap = document.createElement("figcaption");
+  funcTwoFigcap.innerText = test.description;
+  funcTwoFigure.append(functTwoImg, funcTwoFigcap);
+  return funcTwoFigure;
+};
+
+document.querySelector("main").append(funcOne(frogpack));
