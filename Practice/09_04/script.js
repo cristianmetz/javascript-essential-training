@@ -8,19 +8,15 @@
 
 
 const test = document.querySelector("main .grid");
-const allLi = document.querySelectorAll("li");
+const allLi = document.querySelectorAll("li.cell");
 
-allLi.addEventListener("mouseenter", (event) =>{
-    allLi.style.backgroundColor = "Blue";
+test.addEventListener("mouseenter", (event) =>{
+    test.style.backgroundColor = "Blue";
 } )
 
-allLi.addEventListener("mouseleave", (event) =>{
-    allLi.style.backgroundColor = "white";
-} )
+test.addEventListener("mouseleave", (event) =>{
+    test.style.backgroundColor = "white";
+} );
 
-
-// allLi.forEach(item => {
-//   this.addEventListener("mouseover", (item) => {
-//     test.style.backgroundColor = "red";
-//   })  
-// });
+const cellOne = document.querySelector("li.cell.cell01")
+console.log(cellOne);
