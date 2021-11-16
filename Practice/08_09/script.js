@@ -124,5 +124,20 @@ const createArticle = (frogpack) => {
   newArticle.innerHTML = content
   newArticle.prepend(addFigure(frogpack));
   return newArticle;  
-}
-document.body.querySelector("main").append(createArticle(frogpack))
+};
+document.body.querySelector("main").append(createArticle(frogpack));
+
+/**
+ * addFigure function
+ * - Receives dataObj
+ * - Creates <figure> <img> <figcaption>
+ * - Returns <figure>
+ */
+
+/**
+ * createArticle function
+ * - Receives backpack object
+ * - Creates <article>
+ * - Calls addFigure()
+ * - Returns <article>
+ */
