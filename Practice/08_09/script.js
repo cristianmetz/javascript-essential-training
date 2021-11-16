@@ -112,16 +112,16 @@ const addFigure = (dataObj) => {
   let newFig = document.createElement("figure");
   let newimg = document.createElement("img");
   newimg.setAttribute("src", dataObj.image);
-  newimg.setAttribute("alt", "")
-  let newFigCap = document.createElement("figcaption")
+  newimg.setAttribute("alt", "");
+  let newFigCap = document.createElement("figcaption");
   newFigCap.innerText = dataObj.description;
   newFig.append(newimg, newFigCap);
   return newFig;
-}
+};
 
 const createArticle = (frogpack) => {
   let newArticle = document.createElement("article");
-  newArticle.innerHTML = content
+  newArticle.innerHTML = content;
   newArticle.prepend(addFigure(frogpack));
   return newArticle;  
 };
@@ -140,4 +140,25 @@ document.body.querySelector("main").append(createArticle(frogpack));
  * - Creates <article>
  * - Calls addFigure()
  * - Returns <article>
+<<<<<<< HEAD
  */
+
+const funcOne = function (object) {
+  let funcOneArticle = document.createElement("article");
+  funcOneArticle.innerHTML = content;
+  funcOneArticle.prepend(funcTwo(object));
+  return funcOneArticle;
+};
+
+const funcTwo = function (test) {
+  let funcTwoFigure = document.createElement("figure");
+  let functTwoImg = document.createElement("img");
+  functTwoImg.setAttribute("src", test.image);
+  functTwoImg.setAttribute("alt", "");
+  let funcTwoFigcap = document.createElement("figcaption");
+  funcTwoFigcap.innerText = test.description;
+  funcTwoFigure.append(functTwoImg, funcTwoFigcap);
+  return funcTwoFigure;
+};
+
+document.querySelector("main").append(funcOne(frogpack));
